@@ -1,0 +1,43 @@
+<div class="baner">
+    <div class="title">
+        <h1>Thế giới siêu xe</h1>
+        <p>Chinh phục mọi nẻo đường</p>
+        <button type="button" class="btn btn-danger">Xem chi tiết</button>
+    </div>
+</div>
+<div class="container mt-3 mb-4">
+    <h1 class="text-center">Các dòng xe VIP</h1>
+    <div class="row">
+       <div class="col-lg-4">
+          <div class="stepBox">
+            <h1>1</h1>
+            <p>Select Car</p>
+          </div>  
+       </div>
+       <div class="col-lg-4">
+        <div class="stepBox">
+          <h1>2</h1>
+          <p>Select Car</p>
+        </div>  
+     </div>
+     <div class="col-lg-4">
+        <div class="stepBox">
+          <h1>3</h1>
+          <p>Select Car</p>
+        </div>  
+     </div>
+    </div>
+</div>
+
+<!-- car -->
+<div class="container mt-4 mb-4">
+  <div class="row">
+    <div class="col-lg-3 mt-3" *ngFor="let fd of carData; index as i">
+      <div class="carbox" *ngIf="i<=3">
+        <img src="{{fd.carImg}}"/>
+        <h1>{{fd.carName}}</h1>
+        <p>{{fd.carPrice | currency:'INR'}}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <div class="avt">
+        <img src="../../../assets/img/logo.png" />
+      </div>
+       <h1>HoangLong <br>Supper</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-between" id="navbarSupportedContent">
+        <ul class="navbar-nav  mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active " routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}" > Trang chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="menu" routerLinkActive="active-link" target="_blank"> Các dòng xe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="contact" routerLinkActive="active-link"> Liên hệ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="about" routerLinkActive="active-link"> Giới thiệu</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-danger" type="submit">Search</button>
+        </form>
+        <form class="d-flex">
+          <button type="button" class="btn btn-danger m-2">Đăng nhập</button>
+          <button type="button" class="btn btn-danger m-2">Đăng ký</button>
+        </form>
+      </div>
+    </div>
+  </nav>
